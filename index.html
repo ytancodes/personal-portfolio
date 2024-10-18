@@ -1,0 +1,29 @@
+        <div id="quick-settings" class="content">
+            <h2>Broadband Setup Flow Chart</h2>
+            <div id="step1" class="step active">
+                <div class="form-group">
+                    <label for="ssid">Enter SSID Name:</label>
+                    <input type="text" id="ssid" placeholder="Enter SSID" required>
+                </div>
+                <button onclick="nextStep('step2')">Continue</button>
+            </div>
+            <div id="step2" class="step">
+                <div class="form-group">
+                    <label for="password">Enter Password:</label>
+                    <input type="password" id="password" placeholder="Enter Password" required>
+                </div>
+                <button onclick="nextStep('step3')">Continue</button>
+            </div>
+            <div id="step3" class="step">
+                <div class="form-group">
+                    <label for="security">Set Security Settings:</label>
+                    <input type="text" id="security" placeholder="Enter Security Settings" required>
+                </div>
+                <button onclick="nextStep('step4')">Continue</button>
+            </div>
+            <div id="step4" class="step">
+                <h3>Finish Setup</h3>
+                <p>Setup is complete. Click below to save your settings.</p>
+                <button onclick="saveSettings()">Save Settings</button>
+            </div>
+        </div>
